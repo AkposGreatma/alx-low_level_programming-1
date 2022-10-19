@@ -4,14 +4,14 @@
  * main - Print alphabets
  * Return: Always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	int i;
-	char print_alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char i = 'a';
 
-	for (i = 0; i < 26; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(print_alphabet[i]);
+		_putchar(i);
 	}
+	_putchar('\n');
 	return (0);
 }
